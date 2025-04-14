@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    char p;
+    char q;
+    for(p='e';p>='a';p--)
+    {
+        printf("%c",p);
+    }
+    return 0;
+}
