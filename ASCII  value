@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    for (char ch = 'A'; ch <= 'E'; ch++) {
+        printf("ASCII of %c: %d\n", ch, ch);
+    }
+    return 0;
+}
