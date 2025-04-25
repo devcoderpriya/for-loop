@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int rows;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    // Print upper half of diamond
+    for (int i = 1; i <= rows; i++) {
+        // Print spaces
+        for (int j = rows; j > i; j--) {
+            printf(" ");
+        }
+        // Print stars
+        for (int k = 1; k <= i; k++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    // Print lower half of diamond
+    for (int i = rows - 1; i >= 1; i--) {
+        // Print spaces
+        for (int j = rows; j > i; j--) {
+            printf(" ");
+        }
+        // Print stars
+        for (int k = 1; k <= i; k++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
